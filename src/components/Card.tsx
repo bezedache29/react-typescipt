@@ -5,12 +5,11 @@ type CardProps = {
     content: string;
 }
 
-const Card = (props: CardProps) => {
-    console.log(props)
+const Card = ({title, content}: CardProps) => {
   return (
     <div>
-        <h2>{props.title}</h2>
-        <p>{props.content}</p>
+        <h2>{title}</h2>
+        <p>{content}</p>
     </div>
   )
 }
